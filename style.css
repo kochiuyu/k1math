@@ -1,0 +1,326 @@
+body{
+    font-size: 32px;
+    font-family: monospace;
+    background-color: #f4eeff;
+}
+
+#container{
+    margin : 40px auto;
+    background-color: white;
+    height: 600px;
+    width : 800px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+
+#start{
+    font-size: 42px;
+    font-weight: bolder;
+    word-break: break-all;
+    width: 200px;
+    height: 55px;
+    border : 2px solid lightseagreen;
+    text-align: center;
+    /*cursor: pointer;*/
+    position: absolute;
+    left:580px;
+    top: 200px;
+    color : lightseagreen;
+}
+#startauthor{
+    width : 120px;
+    height : 120px;
+    position: absolute;
+    left : 590px;
+    top : 40px;
+	background-color: white;
+	margin: 20px;
+}
+#startauthor img{
+	margin-left: 10px;
+    width : 120px;
+    height : 120px;
+    border-top-left-radius: 5px;
+}
+
+#logo{
+    width : 500px;
+    height : 500px;
+	position: absolute;
+	top:50px;
+	left:50px;
+}
+
+#levels{
+    width : 200px;
+    position: absolute;
+    left : 580px;
+    top : 265px;
+	background-color: white;
+}
+.level{
+    display: inline-block;
+	width: 165px;
+    height: 50px;
+	margin-right:100%;
+    text-align: left;
+    cursor: pointer;
+	padding-left: 40px;
+	padding-top: 7px;
+	padding-bottom: 0px;
+}
+.level:hover{
+    font-weight: bold;
+	background-color: lightblue;
+}
+
+.level p{
+	margin : 0;
+    padding : 20px;
+    font-size: 2em;
+	letter-spacing: 0.2em;
+}
+
+
+#qImg{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+	background-color: lightyellow;
+	margin: 20px;
+}
+#qImg img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#question{
+    width: 720px;
+    height : 240px;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+	background-color: #FFFAF0;
+	margin: 20px 0px 0px 20px;
+	user-select: none;
+}
+#question p{
+    margin : 30px 30px 30px 20px;
+    padding : 15px;
+    font-size: 2.5em;
+	letter-spacing: 0.15em;
+}
+
+#qlevel{
+	width : 140px;
+	height: 40px;
+    position: absolute;
+    left : 0;
+    /*top : 220px;*/
+	top: 0; 
+    /*text-align: center;*/
+	/*background-color: #FFFFB7;*/
+	margin: 25px 0px 0px 20px;
+	font-size: 0.8em;
+}
+
+
+
+#choices{
+    width : 720px;
+    position: absolute;
+    left : 20px;
+    top : 340px;
+	background-color: white;
+}
+.choice{
+    display: inline-block;
+	width: 340px;
+    height: 90px; /* total height is 360px*/
+	/*margin-right:100%;*/
+    text-align: left;
+    cursor: pointer;
+	user-select: none;
+}
+.choice:hover{
+    font-weight: bold;
+	background-color: lightgreen;
+}
+
+.choice p{
+	margin : 0px 0px 0px 0px;
+    padding : 20px;
+    font-size: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+#timer{
+    position: absolute;
+    /*height : 60px;*/
+    width : 250px;
+    /*top : 260px;*/
+	/*top: 60px;*/
+	top: 0px;
+	left: 140px;
+    /*text-align: center;*/
+	/*background-color: #FFF192;*/
+	margin: 20px 0px 0px 20px;
+}
+#counter{
+	width: 20px;
+    font-size: 1em;
+}
+#btimeGauge{
+    width : 250px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 0px;
+	margin-top: 15px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 0px;
+}
+#progress{
+    width : 360px;
+	height: 80px;
+    position: absolute;
+    /*top : 300px;*/
+	top: 0px;
+    left : 400px;
+    text-align: center;
+	/*background-color:  #FFFFB7;*/
+	margin-top: 20px;
+}
+.prog{
+    width : 20px;
+    height : 20px;
+    border: 1px solid #ffcc00;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+	margin-top: 5px;
+}
+
+#quiz{
+    background-color: #FFFFFF;
+    opacity: 0.99;
+    height: 560px;
+    width : 760px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#scoreContainer{
+    background-color: #FFFFB7;
+    opacity: 0.99;
+    height: 560px;
+    width : 760px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#levelreport{
+	position: absolute;
+	top: 70px;
+	left: 280px;
+	font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+#scorereport{
+	position: absolute;
+	top: 250px;
+	left: 260px;
+	font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#starContainer{
+	position: absolute;
+	top: 200px;
+	margin-left:30px;
+}
+
+#restart{
+	position: absolute;
+	top: 400px;
+	left: 150px;
+    cursor: pointer;
+}
+#restart:hover{
+    font-weight: bold;
+	background-color: lightgreen;
+}
+
+#levelup{
+	position: absolute;
+	top: 400px;
+	left: 450px;
+    cursor: pointer;
+}
+#levelup:hover{
+    font-weight: bold;
+	background-color: lightgreen;
+}
+
+#mainmenu{
+	position: absolute;
+	top: 500px;
+	left: 220px;
+    cursor: pointer;
+}
+#mainmenu:hover{
+    font-weight: bold;
+	background-color: lightgreen;
+}
+
+
+
+
+#author{
+    width : 200px;
+    height : 180px;
+    position: absolute;
+    left : 0px;
+    top : 380px;
+	background-color: lightyellow;
+	margin: 20px;
+}
+#author img{
+	margin-left: 10px;
+    width : 180px;
+    height : 180px;
+    border-top-left-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

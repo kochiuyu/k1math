@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="img/tabicon.png">
+</head>
+<body>
+    <div id="container">
+        <div id="start">ADDITION</div>
+		<div id="logo"><img src="img/plus.png" width="500px" height="500px"></div>
+		<div id="startauthor"><img src="img/icon.png"></div>
+		<div id="levels">
+                <div class="level" id="lv1" onclick="setDifficulty('1')">Level 1</div>
+                <div class="level" id="lv2" onclick="setDifficulty('2')">Level 2</div>
+                <div class="level" id="lv3" onclick="setDifficulty('3')">Level 3</div>
+				<div class="level" id="lv4" onclick="setDifficulty('4')">Level 4</div>
+				<div class="level" id="lv5" onclick="setDifficulty('5')">Level 5</div>
+        </div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <!-- <div id="qImg"></div> -->
+			<div id="qlevel">Level: 1</div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+				<div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <!--<div id="counter"></div>-->
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+			<!--<div id="author"><img src="img/icon.png"></div>-->
+        </div>
+        <div id="scoreContainer" style="display: none">
+			<div id="levelreport"></div>
+			<div id="starContainer"></div>
+			<div id="scorereport"></div>
+			<div id="restart" onclick="startQuiz(currentlevel)">&#8634; Again?</div>
+			<div id="levelup" onclick="levelup()">&#8593; Level Up</div>
+			<div id="mainmenu" onclick="mainmenu()">&#8617; Exit to Main Menu</div>
+		</div>
+    </div>
+	<audio id="yesaudio"> 
+		<source src="sound/yes.ogg" type="audio/ogg">
+		<source src="sound/yes.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="noaudio">
+		<source src="sound/no.ogg" type="audio/ogg">
+		<source src="sound/no.mp3" type="audio/mpeg">
+	</audio>
+	<script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
