@@ -70,7 +70,7 @@ body{
 	padding-top: 7px;
 	padding-bottom: 0px;
 }
-.level:hover{
+.no-touch .level:hover{
     font-weight: bold;
 	background-color: lightblue;
 }
