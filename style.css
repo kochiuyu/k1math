@@ -146,7 +146,7 @@ body{
     cursor: pointer;
 	user-select: none;
 }
-.choice:hover{
+.no-touch .choice:hover{
     font-weight: bold;
 	background-color: lightgreen;
 }
