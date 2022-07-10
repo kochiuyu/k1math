@@ -146,11 +146,13 @@ body{
     cursor: pointer;
 	user-select: none;
 }
-.no-touch .choice:hover{
-    font-weight: bold;
-	background-color: lightgreen;
-}
 
+@media(hover: hover) and (pointer: fine){
+	.choice:hover{
+		font-weight: bold;
+		background-color: lightgreen;
+	}
+}
 .choice p{
 	margin : 0px 0px 0px 0px;
     padding : 20px;
